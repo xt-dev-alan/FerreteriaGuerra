@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <templates id="pos_create_sales_order_template" inherit_id="point_of_sale.template" xml:space="preserve">
+
+
+  
+  <!-- CreateSalesOrderButtonWidget -->
+   
+      <t t-name="CreateSalesOrderButtonWidget" name="Create Sales Order Button Widget">
+          <div class="control-button button confirm" id="create_sales_order" style="background-color: #0075AC; color: #fff;">
+                       <i class="fa fa-shopping-cart"></i> Create Sales Order 
+                    </div>
+   	 </t>
+
+ 
+    
+  	</templates>
+  	
+  	
