@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+          <report
+                id="inventory_def_reports_xlsx_id"
+                model="reports.xlsx"
+                string="Print to XLSX"
+                report_type="xlsx"
+                name="inventory_xlsx_reports.inventory_def_reports_xlsx_id"
+                file="inventory_xlsx_reports.inventory_def_reports_xlsx_id"
+                attachment_use="False"
+        />
+  </data>
+</odoo>
