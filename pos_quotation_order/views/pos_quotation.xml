@@ -43,7 +43,7 @@
                                 <field name="qty"/>
                                 <field name="price_unit" widget="monetary"/>
                                 <field name="discount" widget="monetary"/>
-                                <field name="tax_ids_after_fiscal_position" widget="many2many_tags"/>
+                                <!-- <field name="tax_ids_after_fiscal_position" widget="many2many_tags"/> -->
                                 <field name="tax_ids" invisible="1"/>
                                 <field name="price_subtotal" widget="monetary"/>
                                 <field name="price_subtotal_incl" widget="monetary"/>
@@ -56,7 +56,7 @@
                                     <field name="price_unit" widget="monetary"/>
                                     <field name="price_subtotal" invisible="1" widget="monetary"/>
                                     <field name="price_subtotal_incl" invisible="1" widget="monetary"/>
-                                    <field name="tax_ids_after_fiscal_position" widget="many2many_tags"/>
+                                    <!-- <field name="tax_ids_after_fiscal_position" widget="many2many_tags"/> -->
                                     <field name="tax_ids" invisible="1"/>
                                     <field name="notice"/>
                                 </group>
@@ -98,7 +98,6 @@
         <field name="name">Quotations</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">pos.quotation</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" eval="False"/>
         <field name="domain">[]</field>

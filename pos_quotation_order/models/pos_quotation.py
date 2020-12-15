@@ -152,7 +152,7 @@ class PosQuotationLine(models.Model):
     order_id = fields.Many2one('pos.quotation', string='Order Ref', ondelete='cascade')
     create_date = fields.Datetime(string='Creation Date', readonly=True)
     tax_ids = fields.Many2many('account.tax', string='Taxes', readonly=True)
-    tax_ids_after_fiscal_position = fields.Many2many('account.tax',string='Taxes')
+    #tax_ids_after_fiscal_position = fields.Many2many('account.tax', string='Taxes')
     pack_lot_ids = fields.One2many('pos.pack.operation.lot', 'pos_order_line_id', string='Lot/serial Number')
 
     @api.depends('price_unit', 'tax_ids', 'qty', 'discount', 'product_id')
