@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <record id="view_employee_form_pos_access" model="ir.ui.view">
+        <field name="name">view_employee_form_pos_access</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='identification_group']" position="after">
+                <group string="POS Access" name="pos_access">
+                    <field name="pos_discount_access"/>
+                    <field name="pos_price_access"/>
+                    <field name="pos_negative_access"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>

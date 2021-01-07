@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.point_of_sale.pos_prevent_access</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='o_settings_use_payment_terminals']" position="after">
+                <h2>POS Access Right</h2>
+                <div class="row mt16 o_settings_container" id="o_settings_pos_access">
+                    <div class="col-12 col-lg-6 o_setting_box" title="The transactions are processed by Vantiv. Set your Vantiv credentials on the related payment method.">
+                        <div class="o_setting_left_pane">
+                            <field name="pos_access_level"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="pos_access_level" string="Access right on User Level"/>
+                            <div class="text-muted">
+                                If enabled, the pos will have restricted access right on the user level. Otherwise, the restricted access right will be on the employees level.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
